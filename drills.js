@@ -19,11 +19,23 @@
 
 10.) Function calculates if input is a prime number or not. O(n)
 
+11.) 
+      function towerofhanoi(num, start, end, temp){
+        if(num === 0){
+          console.log('recursive')
+          return ;
+      }
 
+    towerofhanoi(num -1, start, end, temp)
+     console.log(`Moved ${num} disks from ${start} to ${end}`)
+    towerofhanoi(num -1, start, end, temp)
+  }
+
+towerofhanoi(5, 'A', 'B', 'C');
 
 
 12.)  
-function countingSheep (numSheep) {
+    1- function countingSheep (numSheep) {
   for (let i = numSheep; i > 0; i--) {
     console.log(`${i}: Another sheep jumps over the fence`)
   }
@@ -32,7 +44,7 @@ function countingSheep (numSheep) {
 
 countingSheep(4);
 
-function powerCalculator (base, exp) {
+2-function powerCalculator (base, exp) {
   let result = base;
   for (i = 1; i < exp; i++) {
     result *= base
@@ -41,7 +53,7 @@ function powerCalculator (base, exp) {
 }
 powerCalculator(2, 3);
 
-function reverseString(str) {
+3-function reverseString(str) {
   if (str.length < 2) {
     return str;
   }
@@ -53,7 +65,7 @@ function reverseString(str) {
 }
 reverseString('hello');
 
-function nthTriNum(n) {
+4-function nthTriNum(n) {
   let triNum = 0
   for (let i= 0; i <= n; i++) {
     triNum += i
@@ -63,7 +75,7 @@ function nthTriNum(n) {
 
 nthTriNum(5)
 
-function strSplit (str, sep) {
+5-function strSplit (str, sep) {
   let result = []
   let prevIndex = -1
   for (let i = 0; i < str.length; i++) {
@@ -80,7 +92,7 @@ function strSplit (str, sep) {
 
 strSplit('02/20/2020', '/')
 
-function fibonacci(n) {
+6-function fibonacci(n) {
   let seq = [1, 1]
   if (n===0) {
     console.log(0);
@@ -102,7 +114,7 @@ function fibonacci(n) {
 
 fibonacci(9)
 
-function factorial(n){
+7-function factorial(n){
   let result = 1
   for(let i = n; i > 0; i--) {
     result = result * i
@@ -112,6 +124,16 @@ function factorial(n){
 
 factorial(5)
 
+
+13, 14.) 
+        1-Linear O(n) - because its it is one loop going through an array
+        2-Linear O(n) - because its it is one loop going through an array
+        3-Linear O(n) - because its it is one loop going through an array
+        4-Linear O(n) - because its it is one loop going through an array
+        5-Linear O(n) - because its it is one loop going through an array
+        6-Linear O(n) - because its it is one loop going through an array
+        7-Linear O(n) - because its it is one loop going through an array
+        
 
 
 
